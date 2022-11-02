@@ -5,7 +5,7 @@ using namespace ::std;
 #include <ctime>
 #include <unistd.h>
 #include <stdio.h>
-
+// uno dos tres
 int manos; // Manos-Para-Jugadores
 const int Tipo_Carta = 4;
 const int Cartas_de_Palo = 13;
@@ -15,7 +15,7 @@ void Barajar(int[][n], int[], int[]);
 void Repartir(int[][n]);
 int Revision(int[][n], int[], int[]);
 int Corrida(int[]);
-int Flor_i(int[]);
+int Flor_Imperial(int[]);
 
 // Las funciones Corrida y Flor_i son llamadas por la funcion de Revision
 
@@ -68,6 +68,7 @@ int main()
                 for (int cont = 1; cont <= 5; cont++)
                     mano1[cont] = xN[cont];
             }
+
             valor = Revision(cartas, xF, xN);
             Valores_Manos[Manos_Personas] = valor;
 
@@ -78,6 +79,7 @@ int main()
         cout << "Desea continuar jugando si= 1, no=0"
              << "\n\n";
         cout << "Ingrese solo el numero:";
+
         cin >> continuar;
 
     } // Cierra while de continuar
@@ -93,32 +95,32 @@ void Barajar(int Mazo[][14], int xFiguras[], int xNumeros[])
     cout << "\nCasino = 1";
     cout << "\nRevisar condiciones = 2 "
          << "\nIngrese solo numero:" << endl;
-    cin >> condicion;
-    if (condicion == 1)
-    {
-        for (contador = 1; contador <= 52; contador++)
-        { // Abre for
-            // El numero de cartas a llenar es 52, las entradas de la variable
-            // mazo.
-            do
-            { // Abre do
-                // seleccion aleatoria de tipo carta
-                tipo_carta = 1 + rand() % 4;
-                numero_carta = 1 + rand() % 13;
-                // seleccion aleatoria de numero carta
-                // se pondra el numero siguiente
-            } while (0 != Mazo[tipo_carta][numero_carta]); // Cierra do
-            // No se llene otra carta en mismo lugar ya llenado
+    /*  cin >> condicion;
+     if (condicion == 1)
+     { */
+    for (contador = 1; contador <= 52; contador++)
+    { // Abre for
+        // El numero de cartas a llenar es 52, las entradas de la variable
+        // mazo.
+        do
+        { // Abre do
+            // seleccion aleatoria de tipo carta
+            tipo_carta = 1 + rand() % 4;
+            numero_carta = 1 + rand() % 13;
+            // seleccion aleatoria de numero carta
+            // se pondra el numero siguiente
+        } while (0 != Mazo[tipo_carta][numero_carta]); // Cierra do
+        // No se llene otra carta en mismo lugar ya llenado
 
-            if (0 == Mazo[tipo_carta][numero_carta])
-            // Este if es porque es muy probable que la fila y columna elegida
-            { // Abre if
-                Mazo[tipo_carta][numero_carta] = contador;
-                xFiguras[contador] = tipo_carta;
-                xNumeros[contador] = numero_carta;
-            } // Cierra if
-        }     // Cierra for
-    }         // Condicion ==1
+        if (0 == Mazo[tipo_carta][numero_carta])
+        // Este if es porque es muy probable que la fila y columna elegida
+        { // Abre if
+            Mazo[tipo_carta][numero_carta] = contador;
+            xFiguras[contador] = tipo_carta;
+            xNumeros[contador] = numero_carta;
+        } // Cierra if
+    }     // Cierra for
+    /*     }         // Condicion ==1
     else if (condicion == 2)
     {
 
@@ -134,6 +136,8 @@ void Barajar(int Mazo[][14], int xFiguras[], int xNumeros[])
         }
 
     } // Condicion ==2
+ */
+
     return;
 } // Cierra barajar
 
@@ -149,14 +153,14 @@ void Repartir(int barajadas[][14])
     const char *Palos[5] = {"-", "♥Corazones", "♣Treboles", "♠Picas",
                             "♦Diamantes"};
 
+    // cout << "\nSu mano es la siguiente:\n " << endl;
+
     for (int r = 1; r <= 5; r++)
     { // Abre for reparte las 5 cartas
         for (int y = 1; y <= 4; y++)
         {
-            cout << Palos[y];
             for (int z = 1; z <= 13; z++)
             { // Abre for doble anidado
-                cout << Numero[z];
                 if (r == barajadas[y][z])
                     cout << Numero[z] << " de " << Palos[y] << endl;
 
@@ -248,7 +252,7 @@ int Revision(int xcartas[][14], int Fig[], int Num[])
         int flor; // Se verifica que haya flor imperial
         if (0 == corrida)
         { // Abre if anidado
-            flor = Flor_i(Num);
+            flor = Flor_Imperial(Num);
             if (0 == flor)
             { // Abre if doble anidado
                 cout << "\n\nUsted tiene un flush!" << endl;
@@ -326,7 +330,7 @@ int Corrida(int X[])
 
 /// Flor_i
 
-int Flor_i(int Y[])
+int Flor_Imperial(int Y[])
 { // Abre la funcion
     int tempor;
     for (int f = 1; f < 5; f++)
