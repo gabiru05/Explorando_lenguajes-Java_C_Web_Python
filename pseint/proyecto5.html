@@ -1,0 +1,235 @@
+<HTML><HEAD>
+	<TITLE>proyecto5.psc</TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Grupo_Notas</SPAN><SPAN class="SS0">
+    
+    <span>//Bloque declarativo</span>
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumoNAME</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Caracter</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Caracter</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Caracter</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">", "</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">terminar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">terminar</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Sum</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">Sum</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Prom</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">real</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">Prom</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NotAL</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NotAL</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NoBAJ</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NoBAJ</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">1000</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNAMAL</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">CARACTER</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> 
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNAMBAJ</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> 
+    
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contadorF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    
+    
+    
+    
+    
+    
+    </SPAN><SPAN class="SS5">Mientras</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">terminar</SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Ingrese nombre del alumno"</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Ingrese nota del alumno"</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS2">//contador de ciclo y asi saber las notas totales</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS2">//calculo promedio</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">Sum</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Sum</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0">
+        
+        
+        
+        
+        
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS11">NoBAJ</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS5">entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NoBAJ</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMBAJ</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"revision bajo"</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">NoBAJ</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"y es de"</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">AlumNAMBAJ</SPAN><SPAN class="SS0"> 
+            
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NotAL</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS5">entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NotAL</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMAL</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"revision alto"</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">NotAL</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"y es de"</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">AlumNAMAL</SPAN><SPAN class="SS0">
+            
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS4">91</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">100</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAMA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS4">81</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">90</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAMB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS4">71</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">80</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAMC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS4">61</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">70</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAMD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS4">61</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+            
+            
+            
+            </SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Espacio</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">AlumNAMF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Concatenar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">AlumNAMF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">nuevaCa</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+        
+        
+        
+        
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"desea continuar si= 1 no = 0"</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">terminar</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">terminar</SPAN><SPAN class="SS10">==</SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"cerrando el programa"</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinMientras</SPAN><SPAN class="SS0"> 
+    
+    </SPAN><SPAN class="SS11">Prom</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Sum</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">/</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Se ingresaron: "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" notas en total"</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"El promedio de las "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contador</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" notas es : "</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS11">Prom</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+    
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que mas se repite es la A con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorA</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que mas se repite es la B con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorB</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que mas se repite es la C con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorC</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que mas se repite es la D con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorD</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que mas se repite es la F con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorF</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    
+    </SPAN><SPAN class="SS2">// inicio si repite menos</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que menos se repite es la A con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorA</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que menos se repite es la B con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorB</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que menos se repite es la C con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorC</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que menos se repite es la D con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorD</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">∧</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">contadorF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"La nota que menos se repite es la F con una cantidad de  "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">contadorF</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+        
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">//Prom</SPAN><SPAN class="SS0">
+    
+    
+
+    
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Hubo: "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOA</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" A que fueron de:"</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS11">AlumNAMA</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Hubo: "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOB</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" B que fueron de:"</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS11">AlumNAMB</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Hubo: "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOC</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" C que fueron de:"</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS11">AlumNAMC</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Hubo: "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOD</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" D que fueron de:"</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS11">AlumNAMD</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS6">"Hubo: "</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Sin</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Saltar</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">NOF</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS6">" F que fueron de:"</SPAN><SPAN class="SS10">),(</SPAN><SPAN class="SS11">AlumNAMF</SPAN><SPAN class="SS10">);</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La nota más baja es: ["</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">NoBAJ</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"] del alumno: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNAMBAJ</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">imprimir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La más alta es: ["</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">NotAL</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"] del alumno: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">AlumNAMAL</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    
+    
+    
+    
+    
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>

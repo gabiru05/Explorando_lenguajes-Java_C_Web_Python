@@ -1,0 +1,195 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 4
+
+int parte1()
+{
+    printf("Bienvenido\n");
+
+    printf("\n\n------------------------------");
+    printf("\n\n-Fase-1---Ingrese numero------");
+    printf("\n\n------------------------------\n");
+    printf("Ingrese numero que desea encriptar o desencriptar\n");
+    printf("El numero de %d cifras como maximo: \n", N);
+    fflush(stdout);
+}
+
+int parte2()
+{
+
+    printf("\n\n------------------------------");
+    printf("\n\n-Fase-2---Seleccion de modo---");
+    printf("\n\n------------------------------\n");
+    printf("1) Encriptar \n");
+    printf("2) Desencriptar \n");
+    printf("Ingrese el numero del programa que utilizara: ");
+}
+
+int main(void)
+{
+    // declaracions
+    int eleccion;
+    int c, i, n;
+    int cifras[N];
+    int x, w, f, d, sum[10], resi[10];
+    unsigned long long int num;
+    num = 0;
+
+    // Banner 1
+    parte1();
+
+    /* Ingreso de Numero */
+
+    for (n = 0; n < N && (c = getchar()) != '\n'; n++)
+    {
+        cifras[n] = c - '0';
+        num *= 10;
+        num += cifras[n];
+    }
+
+    /* Comprobamos las cifras */
+    printf("cifras: ");
+
+    for (i = 0; i < n; ++i)
+        printf(" %d,", cifras[i]);
+
+    // Banner2
+    parte2();
+    scanf("%i", &eleccion);
+
+    // Sección del programa elegida
+    if (1 == eleccion)
+    {
+        /* Seccion de Cifrado */
+
+        for (x = 0; x <= 4; x++)
+        {
+            /* suma */
+            w = cifras[x];
+            w = w + 7;
+            sum[x] = w;
+            /* residuo */
+            f = sum[x];
+            d = f % 10;
+            resi[x] = d;
+        }
+
+        /* Intercambio */
+
+        int cryp[10];
+        cryp[0] = resi[2];
+        cryp[1] = resi[3];
+        cryp[2] = resi[0];
+        cryp[3] = resi[1];
+
+        /* Impresion */
+        int s;
+
+        /*
+          // Originial
+         printf(" \n Original: ");
+
+         for (s = 0; s < n; ++s)
+         {
+
+             printf("%i", cifras[s]);
+         }
+
+         // Suma
+         printf(" \n Suma: ");
+         for (s = 0; s < n; ++s)
+         {
+
+             printf("%i", sum[s]);
+         }
+
+         // residuo
+         printf(" \n con residuo: ");
+         for (s = 0; s < n; ++s)
+         {
+
+             printf("%i", resi[s]);
+         }
+         // intercambiada
+         printf("\n intercambiada: ");
+         for (s = 0; s < n; ++s)
+         {
+             printf("%i", cryp[s]);
+         } */
+
+        // Su numero encriptado es
+
+        printf("\n intercambiada: ");
+        for (s = 0; s < n; ++s)
+        {
+            printf("%i", cryp[s]);
+        }
+    }
+    else if (eleccion == 2)
+    {
+        /* Seccion de Descifrado */
+        /* Intercambio */
+        int descryp[10];
+        descryp[0] = cifras[2];
+        descryp[1] = cifras[3];
+        descryp[2] = cifras[0];
+        descryp[3] = cifras[1];
+
+        /* descifrado */
+        int x, w, f, d, resta[10], resi[10];
+        for (x = 0; x <= 4; x++)
+        {
+
+            // consideramos los que los afecto el residuo
+            w = descryp[x];
+            if (w <= 6)
+            {
+                w = w + 10;
+                resi[x] = w;
+            }
+            else
+            {
+                resi[x] = w;
+            }
+
+            // resta de todos los numeros
+            f = resi[x];
+            f = f - 7;
+            resta[x] = f;
+        }
+        /* Impresion */
+        int s;
+        // Numero que desencriptamos
+        /* printf(" \nNumero por intercambiar: ");
+
+        for (s = 0; s < n; ++s)
+        {
+
+            printf("%d", cifras[s]);
+        }
+
+        // intercambiada
+        printf("\nNumeros en secuencia Original: ");
+
+        for (s = 0; s < n; ++s)
+        {
+            printf("%d", descryp[s]);
+        }
+
+        // residuo
+        printf(" \nConversion de los residuo: ");
+        for (s = 0; s < n; ++s)
+        {
+
+            printf("%i", resi[s]);
+        }*/
+
+        // resta - Original
+        printf(" \nR Numero Original - Desencryptado: ");
+        for (s = 0; s < n; ++s)
+        {
+
+            printf("%i", resta[s]);
+        }
+    }
+}
