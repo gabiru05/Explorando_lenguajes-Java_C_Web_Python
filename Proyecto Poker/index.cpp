@@ -11,6 +11,7 @@ const int Tipo_Carta = 4;
 const int Cartas_de_Palo = 13;
 const int n = Cartas_de_Palo + 1;
 // Inicio de las funciones
+void Asignar();
 void Barajar(int[][n], int[], int[]);
 void Repartir(int[][n]);
 int Revision(int[][n], int[], int[]);
@@ -56,7 +57,20 @@ int main()
             int xF[53] = {0};
             int xN[53] = {0};
 
-            Barajar(cartas, xF, xN);
+            int condion = 0, type, value;
+            cout << "\nIngrese modo de juego" << endl;
+            cout << "\nCasino = 1";
+            cout << "\nRevisar condiciones = 2 "
+                 << "\nIngrese solo numero:" << endl;
+            cin >> condion;
+            if (condion == 1)
+            {
+                Barajar(cartas, xF, xN);
+            }
+            else if (condion == 2)
+            {
+                /* Asignar(cartas); */
+            }
             cout << "\n------- Mano Repartida-------- " << Manos_Personas << " : ";
             cout << endl;
             Repartir(cartas);
@@ -86,18 +100,33 @@ int main()
     return 0;
 } // Cierra main
 
+void Asignar()
+{
+
+    const char *Numero[14] = {"-", "As", "2", "3", "4", "5",
+                              "6", "7", "8", "9", "10",
+                              "Jota", "Reina", "Rey"};
+
+    const char *Palos[5] = {"-", "♥Corazones", "♣Treboles", "♠Picas",
+                            "♦Diamantes"};
+    int z, y;
+    cout << "\n valor de la carta\n 1= AS, 2 3 4 5 6 7 8 9 10 \n 11 = jota \n 12 = Reina \n 13 = Rey ";
+    cout << "Ingresa numero:";
+    cin >> z;
+    cout << "\nSeleccione tipo carta \n 1 = ♥ \n 2 = ♣ \n 3 = ♠ \n 4=♦";
+    cout << "Ingresa tipo:";
+    cin >> y;
+    cout << Numero[z] << " de " << Palos[y] << endl;
+
+    // Cierra for
+    return;
+} // Cierra Asignar
+
 void Barajar(int Mazo[][14], int xFiguras[], int xNumeros[])
 {
     // Declaramos variables a revolver
     int contador, tipo_carta, numero_carta;
-    int condicion, type, value;
-    cout << "\nIngrese modo de juego" << endl;
-    cout << "\nCasino = 1";
-    cout << "\nRevisar condiciones = 2 "
-         << "\nIngrese solo numero:" << endl;
-    /*  cin >> condicion;
-     if (condicion == 1)
-     { */
+
     for (contador = 1; contador <= 52; contador++)
     { // Abre for
         // El numero de cartas a llenar es 52, las entradas de la variable
@@ -126,11 +155,11 @@ void Barajar(int Mazo[][14], int xFiguras[], int xNumeros[])
 
         for (int r = 1; r <= 5; r++)
         { // Abre for reparte las 5 cartas
-            cout << "\nSeleccione tipo carta \n 1 = ♥ \n 2 = ♣ \n 3 = ♠ \n 4=♦"
+
                  << "\nIngrese solo numero:" << endl;
             cin >> type;
 
-            cout << "\n valor de la carta\n 1= AS, 2 3 4 5 6 7 8 9 10 \n 11 = jota \n 12 = Reina \n 13 = Rey "
+
                  << "\nIngrese solo numero:" << endl;
             cin >> value;
         }
@@ -169,21 +198,25 @@ void Repartir(int barajadas[][14])
     }         // Cierra for
 
 } // Cierra Repartir
-// Inicia la funcion para revisar
+  // Inicia la funcion para revisar
 
 int Revision(int xcartas[][14], int Fig[], int Num[])
-{ // Abre Revision
-    int temp = Fig[1];
+{                      // Abre Revision
+    int temp = Fig[1]; // fig almacenamos el tipo=Palo :Diam,Cora,trebo...
     int iguales = 1;
     int corrida = 0;
     int valor = 1; // El valor de la mano es 1, siempre habra una carta
     // de mayor valor;
 
     // Aqui se revisa los numeros
-
+    // blaqueamos el vector
     int temp2[14] = {0};
     for (int s = 1; s <= 5; s++)
-    { // Abre for
+    {
+        // cout << Fig[s] << "Fig\t";       // Abre for
+        // cout << Num[s] << "Num\t";       // cout << Num[s] << "Num\t";
+        // cout << temp2[s] << "Temp2\n\n"; // Num= numero el valor, temp2 alcuenta y verifica los pares
+        // Aumentamos ciclo donde se revisa cada numero y se aumenta el ciclo
         temp2[Num[s]]++;
 
     } // Cierra for
@@ -218,7 +251,7 @@ int Revision(int xcartas[][14], int Fig[], int Num[])
 
     if (contador_trio == 1)
     { // Abre if
-        cout << (0 != contador_pares ? "y 1 trio ( Un full). " : "\nUsted tiene una trio. ");
+        cout << (0 != contador_pares ? "y 1 trio ( Es un full). " : "\nUsted tiene un trio. ");
         if (contador_pares == 1)
             valor = 7;
         else
@@ -249,12 +282,12 @@ int Revision(int xcartas[][14], int Fig[], int Num[])
     { // Abre if de iguales
         corrida = Corrida(Num);
         // La funcion corrida verifica que los numeros sean consecutivos
-        int flor; // Se verifica que haya flor imperial
-        if (0 == corrida)
-        { // Abre if anidado
+        int flor;         // Se verifica que haya flor imperial
+        if (0 == corrida) // si no es corrida
+        {                 // Abre if anidado
             flor = Flor_Imperial(Num);
-            if (0 == flor)
-            { // Abre if doble anidado
+            if (0 == flor) // y no es  flor imperial
+            {              // Abre if doble anidado
                 cout << "\n\nUsted tiene un flush!" << endl;
                 cout << "\n\nFlush – Color Cinco cartas del mismo TIPO. Supera a escalera y pierde con full" << endl;
                 valor = 6;
@@ -263,6 +296,7 @@ int Revision(int xcartas[][14], int Fig[], int Num[])
             { // Abre else doble anidado
                 cout << "\n\nUSTED TIENE UNA FLOR IMPERIAL!" << endl
                      << endl;
+                cout << "\n\nFlor imperial- todas mismo TIPO y seguidas (Escalera)" << endl;
                 valor = 10;
             } // Cierra else doble anidado
         }     // Cierra if anidado
@@ -298,14 +332,17 @@ int Corrida(int X[])
 
     int temporal;
     for (int l = 1; l < 5; l++)
-    { // Abre for
-        for (int d = 1; d < 5; d++)
-        { // Abre for dentro
-            if (X[d + 1] < X[d])
-            { // Abre if
-                temporal = X[d];
-                X[d] = X[d + 1];
-                X[d + 1] = temporal;
+    {                               // Abre for
+        for (int d = 1; d < 5; d++) // ciclo evaluando corrida en menor
+        {                           // Abre for dentro
+            if (X[d + 1] < X[d])    // Si el valor 2 es menor que el valor 1
+            {                       // Abre if
+                // cout << temporal << "temporal\t";
+                temporal = X[d];     // temporal sera igual al valor 2
+                X[d] = X[d + 1];     // el valor 2 pasa a ser valor siguiente en posicion 3--4--5-
+                                     // cout << X[d] << "Siguiente\t";
+                X[d + 1] = temporal; // El siguiente el anterior asi ordenandolo
+                // cout << temporal << "temporal+1\n\n";
             } // Cierra if
         }     // Cierra for dentro
     }         // Cierra for
@@ -313,23 +350,25 @@ int Corrida(int X[])
     int ordenados = 0;
     for (int t = 1; t < 5; t++)
     { // Abre for
-        if (X[t + 1] == X[t] + 1)
-        { // Abre if
-            // cout << X[t] << " ";
+        // cout << X[t] + 1 << "X[t] + 1  \t";
+        //  cout << X[t + 1] << "X[t + 1] \n";
+        if (X[t + 1] == X[t] + 1) // siguiente valor es igual a ese mimos valor +1
+        {                         // Abre if
             ordenados++;
+            // cout << X[t] << "\n x t ";
         } // Cierra if
     }     // Cierra for
-
-    // cout << X[5] << endl;
+          /*   cout << X[1] << endl;
+            cout << X[2] << endl;
+            cout << X[3] << endl;
+            cout << X[4] << endl;
+            cout << X[5] << endl; */
     if (4 != ordenados)
         return 0;
     else
-
         return 1;
 } // cierre funcion corrida
-
 /// Flor_i
-
 int Flor_Imperial(int Y[])
 { // Abre la funcion
     int tempor;
@@ -348,16 +387,12 @@ int Flor_Imperial(int Y[])
 
     // El doble ciclo for anterior ordeno de menor a mayor el arreglo
     // de numeros de las cartas
-
     int variable = 10;
     int orden = 0;
-
     if (Y[1] != 1)
         return 0;
-
     else
     { // Abre else
-
         for (int z = 2; z <= 5; z++)
         { // Abre for
             if (Y[z] != variable)
@@ -367,7 +402,6 @@ int Flor_Imperial(int Y[])
             variable++;
         } // Cierra for
     }     // Cierra else
-
     if (orden != 0)
         return 0;
     else
